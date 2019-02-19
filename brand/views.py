@@ -46,6 +46,10 @@ class BrandUpdateAPIView(RetrieveUpdateDestroyAPIView):
 class BrandDeleteAPIView(RetrieveUpdateDestroyAPIView):
     serializer_class = brandSerializer
     queryset = Brand.objects.all()
+
+class BrandDeleteAPIView2(RetrieveUpdateDestroyAPIView):
+    serializer_class = brandSerializer
+    queryset = Brand.objects.all()
         # else:
         #     return Brand.objects.all()
 

@@ -14,6 +14,6 @@ urlpatterns = [
     path('update/<int:pk>/',BrandUpdateAPIView.as_view(),name = "update"),
     path('delete/<int:pk>/',BrandDeleteAPIView.as_view(),name = "delete"),
 
-    path('list/',BrandDeleteAPIView.as_view(),name = "detail"),
+    #path('list/',BrandDeleteAPIView.as_view(),name = "detail"),
 
 ]

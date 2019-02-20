@@ -50,7 +50,7 @@ class CategoryDeleteAPIView(RetrieveUpdateDestroyAPIView):
 
     queryset = Category.objects.all()
     serializer_class = categorySerializer
-    #lookup_field = 'pk'
+    lookup_field = 'pk'
 
 class CategoryDestroyAPIView(RetrieveUpdateDestroyAPIView):
     serializer_class = categorySerializer
